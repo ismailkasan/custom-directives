@@ -4,6 +4,14 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "paths": {
+      "custom-directives": [
+        "dist/custom-directives"
+      ],
+      "directives": [
+        "dist/directives"
+      ]
+    },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
