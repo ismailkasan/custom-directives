@@ -1,24 +1,61 @@
-# CustomDirectives
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+## Installation
 
-## Code scaffolding
+Use npm to install the package
 
-Run `ng generate component component-name --project custom-directives` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project custom-directives`.
-> Note: Don't forget to add `--project custom-directives` or else it will be added to the default project in your `angular.json` file. 
+  ```terminal
+  $ npm i custom-directives --save 
+  ```
 
-## Build
+## Import
 
-Run `ng build custom-directives` to build the project. The build artifacts will be stored in the `dist/` directory.
+You must add into your module `imports` the `CustomDirectivesModule` in order to add all of the directives.
 
-## Publishing
+  ```typescript
+  import {CustomDirectivesModule} from 'custom-directives';
+  
+  @NgModule({
+   // ...
+   imports: [
+     // ...
+     CustomDirectivesModule
+   ]
+  })
+  ```
 
-After building your library with `ng build custom-directives`, go to the dist folder `cd dist/custom-directives` and run `npm publish`.
+## How to use
+You can use directives like below. 
 
-## Running unit tests
+```html
+With comma(,):
+<input type="text" onlyNumber thousandSeperator="','" /> <!-- Output: "55,25" -->
+Or With dot(.):
+<input type="text" onlyNumber thousandSeperator="'.'" /> <!-- Output: "55.25" -->
+```
 
-Run `ng test custom-directives` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Contributing
 
-## Further help
+* Before adding any new feature or a fix make sure to open an issue first!
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Make sure you have `angular-cli` installed globally.
+
+```bash
+$ npm install -g angular-cli
+```
+
+Clone the project, and install dependencies.
+
+```bash
+$ git clone https://github.com/ismailkasan/custom-directives.git
+$ npm install
+```
+
+Create a new branch
+
+```bash
+$ git checkout -b feat/someFeature
+```
+
+ make sure everything is running properly
+
+Commit & push, and make a pull request!
