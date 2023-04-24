@@ -1,5 +1,5 @@
 {
-  "name": "angular-directives",
+  "name": "@ismailkasan/angular-directives",
   "version": "1.0.1",
   "repository": {
     "type": "git",
@@ -13,7 +13,6 @@
     "test": "ng test",
     "ngcc.dist": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points -t ../dist"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",

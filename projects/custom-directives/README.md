@@ -26,11 +26,19 @@ You must add into your module `imports` the `CustomDirectivesModule` in order to
 ## How to use
 You can use directives like below. 
 
+* Only number
+
 ```html
 With comma(,):
 <input type="text" onlyNumber thousandSeperator="','" /> <!-- Output: "55,25" -->
 Or With dot(.):
 <input type="text" onlyNumber thousandSeperator="'.'" /> <!-- Output: "55.25" -->
+```
+
+* High Light
+
+```html
+<p [appHighlight]="'#58DB9E'" > test</p>
 ```
 
 ## Contributing
